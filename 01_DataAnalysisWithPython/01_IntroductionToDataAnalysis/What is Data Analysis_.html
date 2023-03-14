@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://www.freecodecamp.org/news/what-is-data-analysis/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        
+            <title>What is Data Analysis?</title>
+        
+        <meta name="HandheldFriendly" content="True">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        
+            <link rel="stylesheet" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" href="./What is Data Analysis__files/css2">
+        
+
+        
+        
+    <link rel="stylesheet" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" href="./What is Data Analysis__files/prism.min.css">
+<noscript><link rel="stylesheet" href="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism.min.css"></noscript>
+<link rel="stylesheet" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" href="./What is Data Analysis__files/prism-unescaped-markup.css">
+<noscript><link rel="stylesheet" href="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-unescaped-markup.css"></noscript>
+
+<script type="text/javascript" async="" src="./What is Data Analysis__files/js"></script><script type="text/javascript" async="" src="./What is Data Analysis__files/analytics.js.descarga"></script><script async="" src="./What is Data Analysis__files/gtm.js.descarga"></script><script defer="" type="text/javascript" src="./What is Data Analysis__files/prism.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-unescaped-markup.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-markup-templating.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-bash.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-c.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-clojure.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-cpp.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-csharp.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-css.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-docker.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-elixir.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-erlang.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-git.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-go.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-graphql.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-haskell.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-java.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-javascript.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-json.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-jsx.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-julia.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-kotlin.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-lua.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-markup.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-php.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-python.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-r.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-ruby.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-rust.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-scala.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-sql.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-swift.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-typescript.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-yaml.min.js.descarga"></script>
+<script defer="" type="text/javascript" src="./What is Data Analysis__files/prism-dart.min.js.descarga"></script>
+
+
+
+        
+        <link rel="stylesheet" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" href="./What is Data Analysis__files/global-26e2f3cde9.css">
+        <link rel="stylesheet" type="text/css" href="./What is Data Analysis__files/screen-5a4f9d5c91.css">
+        <link rel="stylesheet" type="text/css" href="./What is Data Analysis__files/search-bar-124f5f949c.css">
+
+        
+        <script defer="" src="./What is Data Analysis__files/algoliasearch.min.js.descarga"></script>
+        <script defer="" src="./What is Data Analysis__files/autocomplete.min.js.descarga"></script>
+
+        
+        <script defer="" src="./What is Data Analysis__files/dayjs.min.js.descarga"></script>
+        <script defer="" src="./What is Data Analysis__files/localizedFormat.min.js.descarga"></script>
+        <script defer="" src="./What is Data Analysis__files/relativeTime.min.js.descarga"></script>
+
+        
+        
+            <script defer="" src="./What is Data Analysis__files/en.min.js.descarga"></script>
+        
+
+        
+        <script>let client,index;document.addEventListener("DOMContentLoaded",(()=>{client=algoliasearch("QMJYL5WYTI","89770b24481654192d7a5c402c6ad9a0"),index=client.initIndex("news")})),document.addEventListener("DOMContentLoaded",(()=>{const e=window.screen.width,t=window.screen.height,n=e>=767&&t>=768?8:5,o=document.getElementById("search-form"),s=document.getElementById("search-input"),a=document.getElementById("dropdown-container");let i,d,c;s.addEventListener("input",(e=>{i=e.target.value})),o.addEventListener("submit",(e=>{e.preventDefault(),function(){if(d=document.getElementsByClassName("aa-cursor")[0],d&&i){const e=d.querySelector("a").href;window.location.assign(e)}else!d&&i&&c&&window.location.assign(`https://www.freecodecamp.org/news/search?query=${i}`)}()}));const l=autocomplete("#search-input",{hint:!1,keyboardShortcuts:["s",191],openOnFocus:!0,appendTo:a,debug:!0},[{source:autocomplete.sources.hits(index,{hitsPerPage:n}),debounce:250,templates:{suggestion:e=>(c=!0,`\n            <a href="${e.url}">\n              <div class="algolia-result">\n                <span>${e._highlightResult.title.value}</span>\n              </div>\n            </a>\n          `),empty:()=>(c=!1,'\n            <div class="aa-suggestion footer-suggestion no-hits-footer">\n              <div class="algolia-result">\n                <span>\n                  No tutorials found\n                </span>\n              </div>\n            </div>\n          '),footer:e=>{if(!e.isEmpty)return`\n              <div class="aa-suggestion footer-suggestion">\n                <a id="algolia-footer-selector" href="https://www.freecodecamp.org/news/search?query=${i}">\n                  <div class="algolia-result algolia-footer">\n                    See all results for ${i}\n                  </div>\n                </a>\n              </div>\n            `}}}]).on("autocomplete:selected",((e,t,n,o)=>{d=t?t.url:`https://www.freecodecamp.org/news/search?query=${i}`,"click"!==o.selectionMethod&&"tabKey"!==o.selectionMethod&&c&&window.location.assign(d)}));document.addEventListener("click",(e=>{e.target!==s&&l.autocomplete.close()}))})),document.addEventListener("DOMContentLoaded",(()=>{dayjs.extend(dayjs_plugin_localizedFormat),dayjs.extend(dayjs_plugin_relativeTime),dayjs.locale("en")}));const isAuthenticated=document.cookie.split(";").some((e=>e.trim().startsWith("jwt_access_token="))),isDonor=document.cookie.split(";").some((e=>e.trim().startsWith("isDonor=true")));</script>
+
+        
+        
+    
+        <script data-ad-client="ca-pub-9482786369113753" src="./What is Data Analysis__files/f.txt" crossorigin="anonymous" async=""></script>
+        <script data-test-label="toggle-ad-layout" defer="" src="./What is Data Analysis__files/toggle-ad-layout-099254b065.js.descarga"></script>
+    
+
+
+        
+        
+    <script defer="" src="./What is Data Analysis__files/fitvids-5d12072cbf.js.descarga"></script>
+    
+    <script>document.addEventListener("DOMContentLoaded",(()=>{const t=document.querySelector(".post-full-content");t&&fitVids(t)}));</script>
+
+
+        
+        
+
+        <link rel="icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico" type="image/png">
+        
+        
+            <link rel="canonical" href="https://www.freecodecamp.org/news/what-is-data-analysis/">
+        
+        <meta name="referrer" content="no-referrer-when-downgrade">
+
+        
+
+        
+    <link rel="amphtml" href="https://www.freecodecamp.org/news/what-is-data-analysis/amp/">
+    <meta name="description" content="Data are everywhere nowadays. And with each passing year, the amount of data we are producing will only continue to increase. There is a large amount of data available, but what do we do with all that data? How is it all used? And what does all that data mean?">
+
+    
+    <meta property="og:site_name" content="freeCodeCamp.org">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="What is Data Analysis?">
+    
+        <meta property="og:description" content="Data are everywhere nowadays. And with each passing year, the amount of data we are producing will only continue to increase. There is a large amount of data available, but what do we do with all that data? How is it all used? And what does all that data mean?">
+    
+    <meta property="og:url" content="https://www.freecodecamp.org/news/what-is-data-analysis/">
+    <meta property="og:image" content="https://www.freecodecamp.org/news/content/images/2022/05/luke-chesser-JKUTrJ4vK00-unsplash.jpg">
+    <meta property="article:published_time" content="2022-05-31T15:59:04.000Z">
+    <meta property="article:modified_time" content="2022-06-02T14:00:18.000Z">
+    
+        <meta property="article:tag" content="Data Analysis">
+    
+        <meta property="article:tag" content="Data Analytics">
+    
+        <meta property="article:tag" content="Python">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/freecodecamp">
+    
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What is Data Analysis?">
+    
+        <meta name="twitter:description" content="Data are everywhere nowadays. And with each passing year, the amount of data we are producing will only continue to increase. There is a large amount of data available, but what do we do with all that data? How is it all used? And what does all that data mean?">
+    
+    <meta name="twitter:url" content="https://www.freecodecamp.org/news/what-is-data-analysis/">
+    <meta name="twitter:image" content="https://www.freecodecamp.org/news/content/images/2022/05/luke-chesser-JKUTrJ4vK00-unsplash.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Dionysia Lemonaki">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Data Analysis, Data Analytics, Python">
+    <meta name="twitter:site" content="@freecodecamp">
+    
+
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1333">
+
+
+        
+    <script type="application/ld+json">{
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"publisher": {
+		"@type": "Organization",
+		"name": "freeCodeCamp.org",
+		"url": "https://www.freecodecamp.org/news/",
+		"logo": {
+			"@type": "ImageObject",
+			"url": "https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg",
+			"width": 2100,
+			"height": 240
+		}
+	},
+	"image": {
+		"@type": "ImageObject",
+		"url": "https://www.freecodecamp.org/news/content/images/2022/05/luke-chesser-JKUTrJ4vK00-unsplash.jpg",
+		"width": 2000,
+		"height": 1333
+	},
+	"url": "https://www.freecodecamp.org/news/what-is-data-analysis/",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.freecodecamp.org/news/"
+	},
+	"datePublished": "2022-05-31T15:59:04.000Z",
+	"dateModified": "2022-06-02T14:00:18.000Z",
+	"keywords": "Data Analysis, Data Analytics, Python",
+	"description": "Data are everywhere nowadays. And with each passing year, the amount of data we\nare producing will only continue to increase.\n\nThere is a large amount of data available, but what do we do with all that data?\nHow is it all used? And what does all that data mean?\n\nIt’s not much use if we just collect and store data in a spreadsheet or database\nand don&#x27;t look at it, explor it, or research it.\n\nData analysts use tools and processes to derive meaning from data. They are\nresponsible for collecting, ma",
+	"headline": "What is Data Analysis?",
+	"author": {
+		"@type": "Person",
+		"name": "Dionysia Lemonaki",
+		"url": "https://www.freecodecamp.org/news/author/dionysia/",
+		"sameAs": [],
+		"image": {
+			"@type": "ImageObject",
+			"url": "https://www.freecodecamp.org/news/content/images/2022/09/IMG_20210414_073834_736--1-.jpeg",
+			"width": 1600,
+			"height": 2058
+		}
+	}
+}</script>
+
+
+        <meta name="generator" content="Eleventy">
+        <link rel="alternate" type="application/rss+xml" title="freeCodeCamp.org" href="https://www.freecodecamp.org/news/rss/">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com/">
+
+<!-- Web Monetization (https://webmonetization.org/) -->
+<meta name="monetization" content="$ilp.uphold.com/LJmbPn7WD4JB">
+<!-- end Web Monetization -->
+
+<!-- dataLayer setup -->
+<script>
+window.dataLayer = window.dataLayer || [];
+</script>
+<!-- End dataLayer setup -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5D6RKKP');</script>
+<!-- End Google Tag Manager -->
+
+
+<meta name="google-site-verification" content="b4tITLzEeeZGEpvD4mGNf3khKM4fvqejQaz9SYBQP8E">
+
+        
+    <style id="fit-vids-style">.fluid-width-video-container{flex-grow: 1;width:100%;}.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+    
+    
+        <body class="home-template">
+    
+        <div class="site-wrapper">
+            <nav class="site-nav nav-padding">
+    <div class="site-nav-left">
+        
+<form id="search-form" data-test-label="search-bar">
+    <div role="search" class="searchbox__wrapper">
+        <label class="fcc_sr_only" for="search-input">
+            Search
+        </label>
+        <input type="search" placeholder="
+    Search 9,700+ tutorials
+" id="search-input" class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style=""><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+        <button type="submit" class="ais-SearchBox-submit">
+            <svg class="ais-SearchBox-submitIcon" xmlns="https://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 40 40">
+    <path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"></path>
+</svg>
+
+            <span class="fcc_sr_only">Submit your search query</span>
+        </button>
+        <div id="dropdown-container"><span class="algolia-autocomplete" style="position: absolute; z-index: 100; display: none; direction: ltr;"><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="display: block; left: 0px; right: auto;"><div class="aa-dataset-1"></div></span></span></div>
+    </div>
+</form>
+
+    </div>
+    <div class="site-nav-middle">
+        <a class="site-nav-logo" href="https://www.freecodecamp.org/news" data-test-label="site-nav-logo"><img src="./What is Data Analysis__files/fcc_primary.svg" alt="freeCodeCamp.org"></a>
+    </div>
+    <div class="site-nav-right">
+        <div class="nav-group">
+            <a class="nav-forum" id="nav-forum" rel="noopener noreferrer" href="https://forum.freecodecamp.org/" target="_blank" data-test-label="forum-button">Forum</a>
+            <a class="toggle-button-nav" id="nav-donate" rel="noopener noreferrer" href="https://www.freecodecamp.org/donate/" target="_blank" data-test-label="donate-button">Donate</a>
+        </div>
+    </div>
+</nav>
+
+
+            
+            <a class="banner" id="banner" data-test-label="banner" rel="noopener noreferrer" target="_blank" href="https://www.freecodecamp.org/donate" text-variation="authenticated">
+    <p id="banner-text">Support our charity and our mission. <span>Donate to freeCodeCamp.org</span>.</p>
+</a>
+
+
+    
+    <script>document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("banner"),t=document.getElementById("banner-text");isAuthenticated?(t.innerHTML="Support our charity and our mission. <span>Donate to freeCodeCamp.org</span>.",e.href="https://www.freecodecamp.org/donate",e.setAttribute("text-variation","authenticated")):isDonor?(t.innerHTML="Thank you for supporting freeCodeCamp through <span>your donations</span>.",e.href="https://www.freecodecamp.org/news/how-to-donate-to-free-code-camp/",e.setAttribute("text-variation","donor")):(t.innerHTML="Learn to code — <span>free 3,000-hour curriculum</span>",e.href="https://www.freecodecamp.org/",e.setAttribute("text-variation","default"))}));</script>
+
+
+            <div id="error-message"></div>
+
+            
+    <main id="site-main" class="post-template site-main outer">
+        <div class="inner">
+            <article class="post-full post ">
+                <header class="post-full-header">
+                    <section class="post-full-meta">
+                        <time class="post-full-meta-date" datetime="Tue May 31 2022 15:59:04 GMT+0000 (Coordinated Universal Time)">
+                            May 31, 2022
+                        </time>
+                        
+                            <span class="date-divider">/</span>
+                            <a dir="ltr" href="https://www.freecodecamp.org/news/tag/data-analysis/">
+                                #Data Analysis
+                            </a>
+                        
+                    </section>
+                    <h1 class="post-full-title">What is Data Analysis?</h1>
+                </header>
+                <div class="post-full-author-header" data-test-label="author-header-no-bio">
+                    
+                        
+                            
+    
+    
+    
+
+    <section class="author-card" data-test-label="author-card">
+        
+            
+    <img srcset="https://www.freecodecamp.org/news/content/images/size/w60/2022/09/IMG_20210414_073834_736--1-.jpeg 60w" sizes="60px" src="./What is Data Analysis__files/IMG_20210414_073834_736--1-.jpeg" class="author-profile-image" alt="Dionysia Lemonaki" width="1600" height="2058" onerror="this.style.display=&#39;none&#39;" data-test-label="profile-image">
+  
+        
+
+        <section class="author-card-content author-card-content-no-bio">
+            <span class="author-card-name">
+                <a href="https://www.freecodecamp.org/news/author/dionysia/" data-test-label="profile-link">
+                    
+                        Dionysia Lemonaki
+                    
+                </a>
+            </span>
+            
+        </section>
+    </section>
+
+                        
+                    
+                </div>
+                
+                    <figure class="post-full-image">
+                        
+    <picture>
+      <source media="(max-width: 700px)" sizes="1px" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w">
+      <source media="(min-width: 701px)" sizes="(max-width: 800px) 400px, (max-width: 1170px) 700px, 1400px" srcset="https://www.freecodecamp.org/news/content/images/size/w300/2022/05/luke-chesser-JKUTrJ4vK00-unsplash.jpg 300w,https://www.freecodecamp.org/news/content/images/size/w600/2022/05/luke-chesser-JKUTrJ4vK00-unsplash.jpg 600w,https://www.freecodecamp.org/news/content/images/size/w1000/2022/05/luke-chesser-JKUTrJ4vK00-unsplash.jpg 1000w,https://www.freecodecamp.org/news/content/images/size/w2000/2022/05/luke-chesser-JKUTrJ4vK00-unsplash.jpg 2000w">
+      <img onerror="this.style.display=&#39;none&#39;" src="./What is Data Analysis__files/luke-chesser-JKUTrJ4vK00-unsplash.jpg" alt="What is Data Analysis?" ,="" width="2000" height="1333">
+    </picture>
+  
+                    </figure>
+                
+                <section class="post-full-content">
+                    <div class="post-and-sidebar">
+                        <section class="post-content ">
+                            
+<p>Data are everywhere nowadays. And with each passing year, the amount of data we are producing will only continue to increase.</p>
+<p>There is a large amount of data available, but what do we do with all that data? How is it all used? And what does all that data mean?</p>
+<p>It’s not much use if we just collect and store data in a spreadsheet or database and don't look at it, explor it, or research it.</p>
+<p>Data analysts use tools and processes to derive meaning from data. They are responsible for collecting, manipulating, investigating, analyzing,  gathering insights, and gaining knowledge from it.</p>
+<p>This is one of the reasons data analysts are very high in demand: they play an integral role in business and science.</p>
+<p>In this article, I will first go over what data analysis means as a term and explain why it is so important.</p>
+<p>I will also break down the data analysis process and list some of the necessary skills required for conducting data analysis.</p>
+<p>Here is an overview of what we will cover:</p>
+<ol>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#data-intro">What is data?</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#data-analysis-intro">What is data analysis?</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#importance">Why is data analysis important?</a>
+<ol>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#targeting">Effective  customer targeting</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#performance">Measure success and performance</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#problem-solving">Problem solving</a></li>
+</ol>
+</li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#overview">An overview of the data analysis process</a>
+<ol>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#step-1">Step 1: recognising and identifying the questions that need answering</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#step-2">Step 2: collecting  raw data</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#step-3">Step 3: cleaning the data</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#step-4">Step 4:  analyzing the data</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#step-5">Step 5:  sharing the results</a></li>
+</ol>
+</li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#skills">What skills are required for data analysis?</a>
+<ol>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#maths">A good grasp of  maths and statistics</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#sql">Knowledge of SQL and Relational Databases</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#programming-language">Knowledge of a programming language</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#data-viz">Knowledge of data visualization tools</a></li>
+<li><a href="https://www.freecodecamp.org/news/what-is-data-analysis/#excel">Knowledge of Excel</a></li>
+</ol>
+</li>
+</ol>
+<h2 id="whatisdatameaninganddefinitionofdataanamedataintroa">What Is Data? Meaning and Definition of Data <a name="data-intro"></a></h2>
+<p>Data refers to collections of facts and individual pieces of information.</p>
+<p>Data is vital for decision-making, planning, and even telling a story.</p>
+<p>There are two broad and general types of data:</p>
+<ul>
+<li>Qualitative data</li>
+<li>Quantitative data</li>
+</ul>
+<p><strong>Qualitative data</strong> is data expressed in non-numerical characters.</p>
+<p>It is expressed as images, videos, text documents, or audio.</p>
+<p>This type of data can’t be measured or counted.</p>
+<p>It is used to determine how people feel about something – it’s about people's feelings, motivations, opinions, perceptions and involves bias.</p>
+<p>It is descriptive and aims to answer questions such as ‘Why’, ‘How’, and ‘What’.</p>
+<p>Qualitative data is gathered from observations, surveys, or user interviews.</p>
+<p><strong>Quantitative data</strong> is expressed in numerical characters.</p>
+<p>This type of data is countable, measurable, and comparable.</p>
+<p>It is about amounts of numbers and involves things such as quantity and the average of numbers.</p>
+<p>It aims to answer questions such as  ‘How much, ‘How many’, ‘How often’, ‘and 'How long’.</p>
+<p>The act of collecting, analyzing, and interpreting quantitative data is known as performing statistical analysis.</p>
+<p>Statistical analysis helps uncover underlying patterns and trends in data.</p>
+<h2 id="whatisdataanalysisadefinitionforbeginnersanamedataanalysisintroa">What Is Data Analysis? A Definition For Beginners <a name="data-analysis-intro"></a></h2>
+<p>Data analysis is the act of turning raw, messy data into useful insights by cleaning the data up, transforming it, manipulating it, and inspecting it.</p>
+<p>The insights gathered from the data are then presented visually in the form of charts, graphs, or dashboards.</p>
+<p>The insights discovered can help aid the company’s or organization’s growth. Decision-makers will be able to come to an actionable conclusion and make the right business decisions.</p>
+<p>Extracting knowledge from raw data will help the company/organization take steps towards achieving greater customer reach, improving performance, and increasing profit.</p>
+<p>At its core, data analysis is about identifying and predicting trends and figuring out patterns, correlations, and relationships in the available data, and finding solutions to complex problems.</p>
+<h2 id="whyisdataanalysisimportantanameimportancea">Why Is Data Analysis Important? <a name="importance"></a></h2>
+<p>Data equals knowledge.</p>
+<p>This means that data analysis is integral for every business.</p>
+<p>It can be useful and greatly beneficial for every department, whether it's administration, accounting, logistics, marketing, design, or engineering, to name a few.</p>
+<p>Below I will explain why exploring data and giving data context and meaning is really important.</p>
+<h3 id="dataanalysisimprovescustomertargetinganametargetinga">Data Analysis Improves Customer Targeting <a name="targeting"></a></h3>
+<p>By analyzing data, you understand your competitors, and you will be able to match your product/service to the current market needs.</p>
+<p>It also helps you determine the appropriate audience and demographic best suited to your product or service.</p>
+<p>This way, you will be able to come up with an effective pricing strategy to make sure that your product/service will be profitable.</p>
+<p>You will also be able to create more targeted campaigns and know what methods and forms of advertising and content to use to reach your audience directly and effectively.</p>
+<p>Knowing the right audience for your product or service will transform your whole strategy. It will become more customer-oriented and customized to fit customers' needs.</p>
+<p>Essentially, with the appropriate information and tools, you will be able to figure out how your product or service can be of value and high quality.</p>
+<p>You'll also be able to make sure that your product or service helps solve a problem for your customers.</p>
+<p>This is especially important in the product development phases since it cuts down on expenses and saves time.</p>
+<h3 id="dataanalysismeasuressuccessandperformanceanameperformancea">Data Analysis Measures Success and Performance <a name="performance"></a></h3>
+<p>By analyzing data, you can measure how well your product/service performs in the market compared to others.</p>
+<p>You are able to identify the stronger areas that have seen the most success and desired results. And you will be able to identify weaker areas that are facing problems.</p>
+<p>Additionally, you can predict what areas could possibly face problems before the problem actually occurs. This way, you can take action and prevent the problem from happening.</p>
+<p>Analyzing data will give you a better idea of what you should focus more on and what you should focus less on going forward.</p>
+<p>By creating performance maps, you can then go on to set goals and identify potential opportunities.</p>
+<h3 id="dataanalysiscanaidproblemsolvinganameproblemsolvinga">Data Analysis Can Aid Problem Solving <a name="problem-solving"></a></h3>
+<p>By performing data analysis on relevant, correct, and accurate data, you will have a better understanding of the right choices you need to make and how to make more informed and wiser decisions.</p>
+<p>Data analysis means having better insights, which helps improve decision-making and leads to solving problems.</p>
+<p>All the above will help a business grow.</p>
+<p>Not analyzing data, or having insufficient data, could be one of the reasons why your business is not growing.</p>
+<p>If that is the case, performing data analysis will help you come up with a more effective strategy for the future.</p>
+<p>And if your business is growing, analyzing data will help it grow even further.</p>
+<p>It will help reach its full potential and meet different goals – such as boosting customer retention, finding new customers, or providing a smoother and more pleasant customer experience.</p>
+<h2 id="anoverviewofthedataanalysisprocessanameoverviewa">An Overview Of The Data Analysis Process <a name="overview"></a></h2>
+<h3 id="step1recognisingandidentifyingthequestionsthatneedansweringanamestep1a">Step 1: Recognising and Identifying The Questions That Need Answering <a name="step-1"></a></h3>
+<p>The first step in the data analysis process is setting a clear objective.</p>
+<p>Before setting out to gather a large amount of data, it is important to think of why you are actually performing the data analysis in the first place.</p>
+<p>What problem are you trying to solve?</p>
+<p>What is the purpose of this data analysis?</p>
+<p>What are you trying to do?</p>
+<p>What do you want to achieve?</p>
+<p>What is the end goal?</p>
+<p>What do you want to gain from the analysis?</p>
+<p>Why do you even need data analysis?</p>
+<p>At this stage, it is paramount to have an insight and understanding of your business goals.</p>
+<p>Start by defining the right questions you want to answer and the immediate and long-term business goals.</p>
+<p>Identify what is needed for the analysis, what kind of data you would need, what data you want to track and measure, and think of a specific problem you want to solve.</p>
+<h3 id="step2collectingrawdataanamestep2a">Step 2: Collecting  Raw Data <a name="step-2"></a></h3>
+<p>The next step is to identify what type of data you want to collect – whether it will be qualitative (non-numerical, descriptive ) or quantitative (numerical).</p>
+<p>The way you go about collecting the data and the sources you gather from will depend on whether it is qualitative or quantitative.</p>
+<p>Some of the ways you could collect relevant and suitable data are:</p>
+<ul>
+<li>By viewing the results of user groups, surveys, forms, questionnaires, internal documents, and interviews that have already been conducted in the business.</li>
+<li>By viewing customer reviews and feedback on customer satisfaction.</li>
+<li>By viewing transactions and purchase history records, as well as sales and financial figure reports created by the finance or marketing department of the business.</li>
+<li>By using a customer relationship management system (CRM) in the company.</li>
+<li>By monitoring website and social media activity and monthly visitors.</li>
+<li>By monitoring social media engagement.</li>
+<li>By tracking commonly searched keywords and search queries.</li>
+<li>By checking which ads are regularly clicked on.</li>
+<li>By checking customer conversion rates.</li>
+<li>By checking email open rates.</li>
+<li>By comparing the company’s data to competitors using third-party services.</li>
+<li>By querying a database.</li>
+<li>By gathering data through open data sets using web scraping. <a href="https://www.freecodecamp.org/news/how-to-scrape-websites-with-python-2/">Web scraping</a> is the act of extracting and collecting data and content from websites.</li>
+</ul>
+<h3 id="step3cleaningthedataanamestep3a">Step 3: Cleaning The Data <a name="step-3"></a></h3>
+<p>Once you have gathered the data from multiple sources, it is important to understand the structure of that data.</p>
+<p>It is also important to check if you have gathered all the data you needed and if any crucial data is missing.</p>
+<p>If you used multiple sources for the data collection, your data will likely be unstructured.</p>
+<p>Raw, unstructured data is not usable. Not all data is necessarily good data.</p>
+<p>Cleaning data is the most important part of the data analysis process and one on which data analysts spend most of their time.</p>
+<p>Data needs to be cleaned, which means correcting errors, polishing, and sorting through the data.</p>
+<p>This could include:</p>
+<ul>
+<li>Looking for <a href="https://www.freecodecamp.org/news/what-is-an-outlier-definition-and-how-to-find-outliers-in-statistics/">outliers</a> (values that are unusually big or small).</li>
+<li>Fixing typos.</li>
+<li>Removing errors.</li>
+<li>Removing duplicate data.</li>
+<li>Managing inconsistencies in the format.</li>
+<li>Checking for missing values or correcting incorrect data.</li>
+<li>Checking for inconsistencies</li>
+<li>Getting rid of irrelevant data and data that is not useful or needed for the analysis.</li>
+</ul>
+<p>This step will ensure that you are focusing on and analyzing the correct and appropriate data and that your data is high-quality.</p>
+<p>If you analyze irrelevant or incorrect data, it will affect the results of your analysis and have a negative impact overall.</p>
+<p>So, the accuracy of your end analysis will depend on this step.</p>
+<h3 id="step4analyzingthedataanamestep4a">Step 4: Analyzing The Data <a name="step-4"></a></h3>
+<p>The next step is to analyze the data based on the questions and objectives from step 1.</p>
+<p>There are four different data analysis techniques used, and they depend on the goals and aims of the business:</p>
+<ul>
+<li><strong>Descriptive Analysis</strong>: This step is the initial and fundamental step in the analysis process. It provides a summary of the collected data and aims to answer the question: “<strong>What</strong> happened?”. It goes over the key points in the data and emphasizes what has already taken place.</li>
+<li><strong>Diagnostic Analysis</strong>: This step is about using the collected data and trying to understand the cause behind the issue at hand and identify patterns. It aims to answer the question: “<strong>Why</strong> has this happened?”.</li>
+<li><strong>Predictive Analysis</strong>: This step is about detecting and predicting future trends and is important for the future growth of the business. It aims to answer the question: “<strong>What is likely to happen</strong> in the future?</li>
+<li><strong>Prescriptive Analysis:</strong> This step is about gathering all the insights from the three previous steps, making recommendations for the future, and creating an actionable plan. It aims to answer the question: “<strong>What needs to be done?</strong>”</li>
+</ul>
+<h3 id="step5sharingtheresultsanamestep5a">Step 5: Sharing The Results <a name="step-5"></a></h3>
+<p>The last step is to interpret your findings.</p>
+<p>This is usually done by creating reports, charts, graphs, or interactive dashboards using data visualization tools.</p>
+<p>All the above will help support the presentation of your findings and the results of your analysis to stakeholders, business executives, and decision-makers.</p>
+<p>Data analysts are storytellers, which means having strong communication skills is important.</p>
+<p>They need to showcase the findings and present the results in a clear, concise, and straightforward way by taking the data and creating a narrative.</p>
+<p>This step will influence decision-making and the future steps of the business.</p>
+<h2 id="whatskillsarerequiredfordataanalysisanameskillsa">What Skills Are Required For Data Analysis? <a name="skills"></a></h2>
+<h3 id="agoodgraspofmathsandstatisticsanamemathsa">A Good Grasp Of Maths And Statistics <a name="maths"></a></h3>
+<p>The amount of maths you will use as a data analyst will vary depending on the job. Some jobs may require working with maths more than others.</p>
+<p>You don’t necessarily need to be a math wizard, but with that said, having at least a fundamental understanding of math basics can be of great help.</p>
+<p>Here are some math courses to get you started:</p>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/learn-algebra-to-improve-your-programming-skills/">College Algebra – Learn College Math Prerequisites with this Free 7-Hour Course</a></li>
+<li><a href="https://www.freecodecamp.org/news/precalculus-learn-college-math-prerequisites-with-this-free-5-hour-course/">Precalculus – Learn College Math Prerequisites with this Free 5-Hour Course</a></li>
+<li><a href="https://www.freecodecamp.org/news/maths-for-programmers/">Math for Programmers Course</a></li>
+</ul>
+<p>Data analysts need to have good knowledge of statistics and probability for gathering and analyzing data, figuring out patterns, and drawing conclusions from the data.</p>
+<p>To get started, take an intro to statistics course, and then you can move on to more advanced topics:</p>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/free-statistics-course/">Learn College-level Statistics in this free 8-hour course</a></li>
+<li><a href="https://www.freecodecamp.org/news/if-you-want-to-learn-data-science-take-a-few-of-these-statistics-classes-9bbabab098b9#.esdiw8wnk">If you want to learn Data Science, take a few of these statistics classes</a></li>
+</ul>
+<h3 id="knowledgeofsqlandrelationaldatabasesanamesqla">Knowledge of SQL and Relational Databases <a name="sql"></a></h3>
+<p>Data analysts need to know how to interact with relational databases to extract data.</p>
+<p>A database is an electronic storage localization for data. Data can be easily retrieved and searched through.</p>
+<p>A relational database is structured in format and all data items stored have pre-defined relationships with each other.</p>
+<p>SQL stands for <strong>S</strong>tructured <strong>Q</strong>uery <strong>L</strong>anguage and is the language used for querying and interacting with relational databases.</p>
+<p>By writing SQL queries you can perform CRUD (Create, Read, Update, and Delete) operations on data.</p>
+<p>To learn SQL, check out the following resources:</p>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/learn-sql-in-10-minutes/">SQL Commands Cheat Sheet – How to Learn SQL in 10 Minutes</a></li>
+<li><a href="https://www.freecodecamp.org/news/learn-sql-free-relational-database-courses-for-beginners/">Learn SQL – Free Relational Database Courses for Beginners</a></li>
+<li><a href="https://www.freecodecamp.org/learn/relational-database/">Relational Database Certification</a></li>
+</ul>
+<h3 id="knowledgeofaprogramminglanguageanameprogramminglanguagea">Knowledge Of A Programming Language <a name="programming-language"></a></h3>
+<p>To further organize and manipulate databases, data analysts benefit from knowing a programming language.</p>
+<p>Two of the most popular ones used in the data analysis field are Python and R.</p>
+<p>Python is a general-purpose programming language, and it is very beginner-friendly thanks to its syntax that resembles the English language. It is also one of the most used technical tools for data analysis.</p>
+<p>Python offers a wealth of packages and libraries for data manipulation, such as Pandas and NumPy, as well as for data visualization, such as Matplotlib.</p>
+<p>To get started, <a href="https://www.freecodecamp.org/news/how-to-learn-python/">first see how to go about learning Python as a complete beginner</a>.</p>
+<p>Once you understand the fundamentals, you can move on to learning about Pandas, NumPy, and Matplotlib.</p>
+<p>Here are some resources to get you started:</p>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/python-pandas-functions/">How to Get Started with Pandas in Python – a Beginner's Guide</a></li>
+<li><a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-the-pandas-library-for-data-science-in-python/">The Ultimate Guide to the Pandas Library for Data Science in Python</a></li>
+<li><a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-the-numpy-scientific-computing-library-for-python/">The Ultimate Guide to the NumPy Package for Scientific Computing in Python</a></li>
+<li><a href="https://www.freecodecamp.org/news/numpy-python-tutorial/">Learn NumPy and start doing scientific computing in Python</a></li>
+<li><a href="https://www.freecodecamp.org/news/how-to-analyze-data-with-python-pandas/">How to Analyze Data with Python, Pandas &amp; Numpy - 10 Hour Course</a></li>
+<li><a href="https://www.freecodecamp.org/news/matplotlib-course-learn-python-data-visualization/">Matplotlib Course – Learn Python Data Visualization</a></li>
+<li><a href="https://www.freecodecamp.org/news/python-data-science-course-matplotlib-pandas-numpy/">Python Data Science – A Free 12-Hour Course for Beginners. Learn Pandas, NumPy, Matplotlib, and More.</a></li>
+</ul>
+<p>R is a language used for statistical analysis and data analysis. That said, it is not as beginner-friendly as Python.</p>
+<p>To get started learning it, check out the following courses:</p>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/r-programming-language-explained/">R Programming Language Explained</a></li>
+<li><a href="https://www.freecodecamp.org/news/r-programming-course/">Learn R programming language basics in just 2 hours with this free course on statistical programming</a></li>
+</ul>
+<h3 id="knowledgeofdatavisualizationtoolsanamedataviza">Knowledge of data visualization tools <a name="data-viz"></a></h3>
+<p>Data visualization is the graphical interpretation and presentation of data.</p>
+<p>This includes creating graphs, charts, interactive dashboards, or maps that can be easily shared with other team members and important stakeholders.</p>
+<p>Data visualization tools are essentially used to tell a story with data and drive decision-making.</p>
+<p>One of the most popular data visualization tools used is Tableau.</p>
+<p>To learn Tableau, check out the following course:</p>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/tableau-for-data-science-and-data-visualization-crash-course/">Tableau for Data Science and Data Visualization - Crash Course</a></li>
+</ul>
+<h3 id="knowledgeofexcelanameexcela">Knowledge of Excel <a name="excel"></a></h3>
+<p>Excel is one of the most essential tools used in Data analysis.</p>
+<p>It is used for storing, structuring, and formatting data, performing calculations, summarizing data and identifying trends, sorting data into categories, and creating reports.</p>
+<p>You can also use Excel to create charts and graphs.</p>
+<p>To learn how to use Excel, check out the following courses:</p>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/learn-microsoft-excel/">Learn Microsoft Excel - Full Video Course</a></li>
+<li><a href="https://www.freecodecamp.org/news/excel-classes-online-free-excel-training-courses/">Excel Classes Online – 11 Free Excel Training Courses</a></li>
+<li><a href="https://www.freecodecamp.org/news/data-analysis-with-python-for-excel-users-course/">Data Analysis with Python for Excel Users Course</a></li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>This marks the end of the article – thank you so much for making it to the end!</p>
+<p>Hopefully this guide was helpful, and it gave you some insight into what data analysis is, why it is important, and what skills you need to enter the field.</p>
+<p>Thank you for reading!</p>
+<!--kg-card-end: markdown-->
+
+                        </section>
+                        
+                            <div class="sidebar">
+                                
+                                    
+
+                                
+                                    
+
+                                
+                                    
+
+                                
+                                    
+
+                                
+                                    
+
+                                
+                                    
+
+                                
+                                    
+
+                                
+                                    
+
+                                
+                                    
+
+                                
+                                    
+
+                                
+                                    
+
+                                
+                                    
+
+                                
+                            </div>
+                        
+                    </div>
+                    <hr>
+                    
+                        <div class="post-full-author-header" data-test-label="author-header-with-bio">
+                            
+                                
+    
+    
+    
+
+    <section class="author-card" data-test-label="author-card">
+        
+            
+    <img srcset="https://www.freecodecamp.org/news/content/images/size/w60/2022/09/IMG_20210414_073834_736--1-.jpeg 60w" sizes="60px" src="./What is Data Analysis__files/IMG_20210414_073834_736--1-.jpeg" class="author-profile-image" alt="Dionysia Lemonaki" width="1600" height="2058" onerror="this.style.display=&#39;none&#39;" loading="lazy" data-test-label="profile-image">
+  
+        
+
+        <section class="author-card-content ">
+            <span class="author-card-name">
+                <a href="https://www.freecodecamp.org/news/author/dionysia/" data-test-label="profile-link">
+                    
+                        Dionysia Lemonaki
+                    
+                </a>
+            </span>
+            
+                
+                    <p data-test-label="author-bio">Learning something new everyday and writing about it</p>
+                
+            
+        </section>
+    </section>
+
+                            
+                        </div>
+                        <hr>
+                    
+
+                    
+                    
+                        
+    
+
+
+<p data-test-label="social-row-cta" class="social-row">
+    If this article was helpful, <button id="tweet-btn" class="cta-button" data-test-label="tweet-button" onclick="window.open(
+    &#39;https://twitter.com/intent/tweet?text=What%20is%20Data%20Analysis%3F%0A%0Ahttps://www.freecodecamp.org/news/what-is-data-analysis/&#39;,
+    &#39;share-twitter&#39;,
+    &#39;width=550, height=235&#39;
+  ); return false;">tweet it</button>.
+</p>
+
+
+    
+    <script>document.addEventListener("DOMContentLoaded",(()=>{const t=document.getElementById("tweet-btn"),e=window.location,n="What%20is%20Data%20Analysis%3F".replace(/&#39;/g,"%27"),o="",i="",r=Boolean("");let a;if(r&&(o||i)){const t={originalPostAuthor:"",currentPostAuthor:"Dionysia Lemonaki"};a=encodeURIComponent(`Thank you ${o||t.originalPostAuthor} for writing this helpful article, and ${i||t.currentPostAuthor} for translating it.`)}else!r&&i&&(a=encodeURIComponent(`Thank you ${i} for writing this helpful article.`));const s=`window.open(\n    '${a?`https://twitter.com/intent/tweet?text=${a}%0A%0A${n}%0A%0A${e}`:`https://twitter.com/intent/tweet?text=${n}%0A%0A${e}`}',\n    'share-twitter',\n    'width=550, height=235'\n  ); return false;`;t.setAttribute("onclick",s)}));</script>
+
+
+                        
+
+<div class="learn-cta-row" data-test-label="learn-cta-row">
+    <p>
+        Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. <a href="https://www.freecodecamp.org/learn/" class="cta-button" id="learn-to-code-cta" rel="noopener noreferrer" target="_blank">Get started</a>
+    </p>
+</div>
+
+                    
+                </section>
+                
+                    <div class="banner-ad bottom">
+                        
+
+                    </div>
+                
+            </article>
+        </div>
+    </main>
+
+
+            
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-desc-col">
+                <p data-test-label="tax-exempt-status">freeCodeCamp is a donor-supported tax-exempt 501(c)(3) charity organization (United States Federal Tax Identification Number: 82-0779546)</p>
+                <p data-test-label="mission-statement">Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public. We also have thousands of freeCodeCamp study groups around the world.</p>
+                <p data-test-label="donation-initiatives">Donations to freeCodeCamp go toward our education initiatives, and help pay for servers, services, and staff.</p>
+                <p class="footer-donation" data-test-label="donate-text">
+                    You can <a href="https://www.freecodecamp.org/donate/" class="inline" rel="noopener noreferrer" target="_blank">make a tax-deductible donation here</a>.
+                </p>
+            </div>
+            <div class="trending-guides" data-test-label="trending-guides">
+                <div class="col-header">Trending Guides</div>
+                <div class="trending-guides-row">
+                    <div class="footer-col footer-col-1">
+                        <a href="https://www.freecodecamp.org/news/hello-world-in-java-example-program/" rel="noopener noreferrer" target="_blank">Hello World in Java
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/what-is-the-429-too-many-requests-http-error/" rel="noopener noreferrer" target="_blank">What is a 429 Error?
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/inline-style-in-html/" rel="noopener noreferrer" target="_blank">Inline Style in HTML
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/python-absolute-value-python-abs-tutorial/" rel="noopener noreferrer" target="_blank">Python Absolute Value
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/java-switch-statement-how-to-use-a-switch-case-in-java/" rel="noopener noreferrer" target="_blank">Java Switch Statement
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/how-to-change-font-with-html/" rel="noopener noreferrer" target="_blank">Change Font with HTML
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/error-502-bad-gateway-meaning/" rel="noopener noreferrer" target="_blank">502 Bad Gateway Error
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/why-static-in-java-what-does-this-keyword-mean/" rel="noopener noreferrer" target="_blank">Static Keyword in Java
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/javascript-convert-string-to-number-js-string-to-int-example/" rel="noopener noreferrer" target="_blank">String to Number in JS
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/global-variable-in-python-non-local-python-variables/" rel="noopener noreferrer" target="_blank">Python Global Variable
+                        </a>
+                    </div>
+                    <div class="footer-col footer-col-2">
+                        <a href="https://www.freecodecamp.org/news/python-set-how-to-create-sets-in-python/" rel="noopener noreferrer" target="_blank">Python Set
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/what-is-rest-rest-api-definition-for-beginners/" rel="noopener noreferrer" target="_blank">What is REST?
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/crud-operations-explained/" rel="noopener noreferrer" target="_blank">What is CRUD?
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/2f-in-python-what-does-it-mean/" rel="noopener noreferrer" target="_blank">%.2f in Python
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/git-reset-origin-how-to-reset-a-local-branch-to-remote-tracking-branch/" rel="noopener noreferrer" target="_blank">Git Reset Origin
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/what-is-localhost/" rel="noopener noreferrer" target="_blank">What is Localhost?
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/check-if-an-item-is-in-an-array-in-javascript-js-contains-with-array-includes/" rel="noopener noreferrer" target="_blank">JS Array.includes()
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/javascript-date-comparison-how-to-compare-dates-in-js/" rel="noopener noreferrer" target="_blank">Compare Dates in JS
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/how-to-split-a-string-in-python/" rel="noopener noreferrer" target="_blank">Python Split String
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/python-enumerate-what-is-the-enumerate-function-in-python/" rel="noopener noreferrer" target="_blank">Python enumerate()
+                        </a>
+                    </div>
+                    <div class="footer-col footer-col-3">
+                        <div class="footer-left">
+                            <a href="https://www.freecodecamp.org/news/how-to-create-a-set-in-python/" rel="noopener noreferrer" target="_blank">Create a Set in Python
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/how-to-remove-a-directory-in-linux/" rel="noopener noreferrer" target="_blank">Remove a Dir in Linux
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/what-is-coding-used-for/" rel="noopener noreferrer" target="_blank">What is Coding Used For?
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/javascript-string-format-how-to-format-strings-in-js/" rel="noopener noreferrer" target="_blank">JavaScript String Format
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/javascript-string-to-date-date-parsing-in-js/" rel="noopener noreferrer" target="_blank">JavaScript String to Date
+                            </a>
+                        </div>
+
+                        <div class="footer-right">
+                            <a href="https://www.freecodecamp.org/news/what-does-a-data-analyst-do-data-analyst-job-description/" rel="noopener noreferrer" target="_blank">What’s a Data Analyst Do?
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/refresh-the-page-in-javascript-js-reload-window-tutorial/" rel="noopener noreferrer" target="_blank">Refresh Page in JavaScript
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/remove-underline-from-link-in-css/" rel="noopener noreferrer" target="_blank">Remove Underline from Link
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/how-to-clear-a-javascript-array-js-empty-array/" rel="noopener noreferrer" target="_blank">How to Clear an Array in JS
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/javascript-capitalize-first-letter-of-word/" rel="noopener noreferrer" target="_blank">Capitalize 1st Letter in JS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="col-header" data-test-label="our-nonprofit">Our Charity</div>
+            <div class="footer-divider"></div>
+            <div class="our-nonprofit">
+                <a href="https://www.freecodecamp.org/news/about/" rel="noopener noreferrer" target="_blank" data-test-label="about">
+                    About
+                </a>
+                <a href="https://www.linkedin.com/school/free-code-camp/people/" rel="noopener noreferrer" target="_blank" data-test-label="alumni">
+                    Alumni Network
+                </a>
+                <a href="https://github.com/freeCodeCamp/" rel="noopener noreferrer" target="_blank" data-test-label="open-source">
+                    Open Source
+                </a>
+                <a href="https://www.freecodecamp.org/news/shop/" rel="noopener noreferrer" target="_blank" data-test-label="shop">
+                    Shop
+                </a>
+                <a href="https://www.freecodecamp.org/news/support/" rel="noopener noreferrer" target="_blank" data-test-label="support">
+                    Support
+                </a>
+                <a href="https://www.freecodecamp.org/news/sponsors/" rel="noopener noreferrer" target="_blank" data-test-label="sponsors">
+                    Sponsors
+                </a>
+                <a href="https://www.freecodecamp.org/news/academic-honesty-policy/" rel="noopener noreferrer" target="_blank" data-test-label="honesty">
+                    Academic Honesty
+                </a>
+                <a href="https://www.freecodecamp.org/news/code-of-conduct/" rel="noopener noreferrer" target="_blank" data-test-label="coc">
+                    Code of Conduct
+                </a>
+                <a href="https://www.freecodecamp.org/news/privacy-policy/" rel="noopener noreferrer" target="_blank" data-test-label="privacy">
+                    Privacy Policy
+                </a>
+                <a href="https://www.freecodecamp.org/news/terms-of-service/" rel="noopener noreferrer" target="_blank" data-test-label="tos">
+                    Terms of Service
+                </a>
+                <a href="https://www.freecodecamp.org/news/copyright-policy/" rel="noopener noreferrer" target="_blank" data-test-label="copyright">
+                    Copyright Policy
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+
+        
+        
+        
+
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6RKKP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        
+    <script defer="" src="./What is Data Analysis__files/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;7a7848047c9afdf5&quot;,&quot;token&quot;:&quot;bdb993c6dde44e178aabd9555e75e4f4&quot;,&quot;version&quot;:&quot;2023.2.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+</body></html>
